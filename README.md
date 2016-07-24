@@ -1,11 +1,11 @@
-# diff-in-ML
-An implementation of `diff` in ML using the Longest Common Subsequence algorithm
+# `diff` in ML
+An implementation of character-oriented `diff` utility in ML using the Longest Common Subsequence algorithm
 
-- This program compares two strings and returns its result of the comparison
+- This program compares two strings and returns as the result the smallest set of deletions, insertions, and modifications to create a string from the other.
 
 - The result of a comparison is actually a list of hunks (in the form of pairs of `int`s), which can be one of:  
-  `(0, n)` denoting n characters added (in the right only)  
-  `(m, 0)` denoting m characters deleted (in the left only)  
+  `(0, n)` denoting n characters added (to the right)  
+  `(m, 0)` denoting m characters deleted (from the left)  
   `(m, n)` denoting m characters are changed into n characters  
   `(-1, n)` denoting the same n characters  
 
